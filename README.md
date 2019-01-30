@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # pattern-library
 
 The pattern-library UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
@@ -34,4 +34,4 @@ Fabricator builds both a static documentation site and optimized CSS and JS tool
 The build artifacts output to the `dist` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
 =======
 # flutter-jobs
->>>>>>> 4f6a8441e6a38d3fdbe30b19edbf9a0a8a5c5816
+

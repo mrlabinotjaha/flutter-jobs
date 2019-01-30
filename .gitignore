@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Always-ignore extensions #
 ############################
 *.bak
@@ -109,4 +109,4 @@ typings/
 
 # next.js build output
 .next
->>>>>>> 4f6a8441e6a38d3fdbe30b19edbf9a0a8a5c5816
+
