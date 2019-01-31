@@ -1,6 +1,7 @@
 .sidebar {
 	width: 261px;
 	height: 100vh;
+	position: fixed;
   background-image: linear-gradient(16deg, #0072ff, #00c6ff);
 }
 
@@ -50,9 +51,15 @@
 }
 
 .dashboard-header__settings {
+	
+}
+
+.dashboard-header__login {
 	display: flex;
 	align-items: center;
-	
+	img {
+		margin-left: 10px;
+	}
 }
 
 .dashboard-header__title {
