@@ -1,0 +1,10 @@
+.button {
+  border-radius: 4px;
+  background-color: $black;
+  padding: 12px 30px;
+  margin-bottom: 0;
+  &:hover, &:focus {
+  	outline: none;
+  	background-color: $black;
+  }
+}
