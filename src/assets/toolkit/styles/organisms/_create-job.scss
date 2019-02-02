@@ -1,0 +1,33 @@
+.create-job__layout {
+	width: 580px;
+	margin: 0 auto;
+	padding: 40px 80px;
+	h4 {
+		text-align: center;
+		font-size: 24px;
+	}
+}
+
+.create-job {
+	margin-top: 35px;
+	h5 {
+		font-size: 20px;
+	  font-weight: 600;
+	  color: #000000;
+	  margin-bottom: 20px;
+	}
+}
+
+.create-job__input {
+	label {
+		margin-bottom: 35px;
+		span {
+			font-size: 12px;
+	    font-family: ApexSans-Bold;
+	    padding-bottom: 8px;
+			color: #5b5d6e;
+			text-transform: uppercase;
+			display: inherit;
+		}
+	}
+}
