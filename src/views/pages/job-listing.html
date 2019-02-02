@@ -8,11 +8,11 @@
 	<div class="dashboard-layout__hero">
 		<h4 class="job-listing-table__title">Job listings</h4>
 
-		{{> job-listing-table main-class="no-border"settings="true"}}
-		{{> job-listing-table classes="red" days-left="Job expired"settings="true"}}
-		{{> job-listing-table buttons="true" settings="true"}}
-		{{> job-listing-table settings="true"}}
-		{{> job-listing-table settings="true"}}
+		{{> job-listing-table main-class="no-border" settings="true" expiring="true"}}
+		{{> job-listing-table classes="red" days-left="Job expired" settings="true" expiring="true"}}
+		{{> job-listing-table settings="true" buttons="true" expiring="true" }}
+		{{> job-listing-table settings="true" expiring="true" }}
+		{{> job-listing-table settings="true" expiring="true" }}
 
 	</div>
 </div>
