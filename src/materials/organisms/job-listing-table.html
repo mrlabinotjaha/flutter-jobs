@@ -1,0 +1,29 @@
+
+	<div class="job-listing-table__list {{main-class}}">
+		<div class="job-listing-table__logo" style="background-image: url('http://www.red-id.com/media/44980/red_facebook_logo.png')"></div>
+		<div class="job-listing-table__info">
+			<h4>
+				<a href="#">Mobile Developer</a>
+			</h4>
+			<h5>
+				<a href="#">Apple inc</a>
+			</h5>
+		</div>
+		<div class="job-listing-table__time">
+			{{#if expiring}}
+				<h5 class="{{classes}}"><img src="{{image 'time-left.svg'}}" alt="">{{default days-left "12 days left"}}</h5>
+			{{/if}}
+			{{#if new}}
+				<span class="new {{#if blue}}blue{{/if}}"><img src="{{image 'blue-star.svg'}}" alt="">{{new}}</span>
+			{{/if}}
+			<h5><img src="{{image 'gray-placeholder.svg'}}" alt="">London, United Kingdom</h5>
+		</div>
+		<div class="job-listing-table__more">
+			{{#if buttons}}
+				<a href="#" class="button blue">Renew</a>
+			{{/if}}
+			{{#if settings}}
+			<a href="#"><img src="{{image 'envelope.svg'}}" alt=""></a>
+			{{/if}}
+		</div>
+	</div>

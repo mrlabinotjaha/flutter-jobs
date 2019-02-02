@@ -7,4 +7,11 @@
   	outline: none;
   	background-color: $black;
   }
+  &.blue {
+  	background-color: $blue;
+		&:hover, &:focus {
+	  	outline: none;
+	  	background-color: $blue;
+	  }
+  }
 }

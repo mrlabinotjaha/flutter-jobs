@@ -1,1 +1,52 @@
-{{> header }}
+
+<div class="master-layout">
+	{{> header }}
+	<div class="master-layout__header">
+		<h1>Find only Flutter jobs!</h1>
+		<h5>Flutter allows you to build beautiful native apps on <br>iOS and Android from a single codebase.</h5>
+		<div class="home__search">
+
+			<label><span>Location</span>
+				<div class="home__input">
+	        <input class="input" type="email" placeholder="Search for state, city">
+	        <img src="{{image 'placeholder.svg'}}" alt="">				
+				</div>
+      </label>
+
+      <label><span>Type of work</span>
+      	<div class="home__select">
+	        <select data-placeholder="Full time/part time ..." class="chosen-select">
+						<option></option>
+					  <option value="saab">Saab</option>
+					  <option value="mercedes">Mercedes</option>
+	        </select>
+	        <img class="home__select-before" src="{{image 'portfolio.svg'}}" alt="">
+
+	        <img class="home__select-after" src="{{image 'downwards-arrow-key.svg'}}" alt="">
+        </div>
+      </label>
+		</div>
+	</div>
+
+	<div class="master-layout__hero">
+		<div class="home__table">
+			<h4 class="home__table-title">Today</h4>
+			
+			<div class="home__table-list">
+				{{> job-listing-table main-class="home-table no-border" }}
+				{{> job-listing-table main-class="home-table" new="New" }}
+				{{> job-listing-table main-class="home-table" new="Featured" blue="true"}}
+			</div>
+			
+			<h4 class="home__table-title">This week</h4>
+
+			<div class="home__table-list">
+				{{> job-listing-table main-class="home-table no-border" }}
+				{{> job-listing-table main-class="home-table" }}
+				{{> job-listing-table main-class="home-table" }}
+			</div>
+		</div>
+		
+
+	</div>
+</div>

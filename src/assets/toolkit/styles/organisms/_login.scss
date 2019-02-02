@@ -1,0 +1,77 @@
+.login {
+	background-image: linear-gradient(57deg, #0072ff, #00c6ff);
+	padding-bottom: 60px;
+	.header {
+		background: transparent;
+	}
+}
+
+.login__card {
+	width: 470px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 45px 65px;
+  h4 {
+  	margin-bottom: 50px;
+	  font-family: ApexSans-Bold;
+  }
+  p {
+  	font-size: 14px;
+  	color: #9b9b9b;
+  	margin-top: 35px;
+  	a {
+  		 color: #000000;
+  	}
+  }
+  @include breakpoint(small down) {
+    width: 100%;
+    border-radius: 0px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 45px 10px;
+    h4 {
+    	text-align: center;
+    }
+    p {
+    	text-align: center;
+    }
+    button {
+    	text-align: center;
+    }
+  }
+}
+
+.login__card-inputs {
+	label {
+		margin-bottom: 35px;
+		span {
+			font-size: 12px;
+	    font-family: ApexSans-Bold;
+	    padding-bottom: 8px;
+			color: #5b5d6e;
+			text-transform: uppercase;
+			display: inherit;
+		}
+	}
+}
+
+.login__post {
+	color: #ffffff;
+	text-align: center;
+	margin-top: 30px;
+	a {
+		margin-left: 20px;
+	}
+}
+
+.input {
+	border-radius: 6px;
+  background-color: #fcfdff;
+	box-shadow: none;
+	border: 1px solid #d3d9e5;
+	height: 44px;
+	font-size: 12px;
+}

@@ -12,6 +12,7 @@
 @import
   'vendors/vendors',
   '../../vendor/Scut/dist/scut',
+  '../../../../node_modules/chosen-js/chosen',
   '../../vendor/foundation-sites/scss/foundation';
 
 @include foundation-global-styles;

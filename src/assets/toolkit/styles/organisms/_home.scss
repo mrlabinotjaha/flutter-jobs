@@ -1,0 +1,141 @@
+.master-layout {
+	background-image: linear-gradient(57deg, #0072ff, #00c6ff);
+	.header {
+		background: transparent;
+	}
+}
+
+.home__select {
+	position: relative;
+	.chosen-container {
+
+	}
+	.home__select-before {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 10px;
+		pointer-events: none;
+	}
+	.home__select-after {
+    right: 8px;
+    position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+
+.home__input {
+		position: relative;
+	input {
+		margin: 0;
+		padding-left: 25px;
+	}
+	img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 8px;
+	}
+}
+
+.home__search {
+	width: 550px;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 70px 0px;
+	display: flex;
+	input {
+ 		background: rgba(0, 0, 0, 0.3);
+ 		border: none;
+ 		color: #fff;
+    font-family: ApexSans-Medium;
+		&::placeholder {
+ 			color: #fff;
+		}
+	}
+	.chosen-container {
+		width: 260px!important;
+		.chosen-single {
+			height: 44px;
+			display: flex;
+			align-items: center;
+			box-shadow: none;
+ 			background: rgba(0, 0, 0, 0.3);
+ 			border: none;	
+ 			span {
+ 				color: #fff;
+ 				margin-left: 25px;
+ 				text-transform: initial;
+    	font-family: ApexSans-Medium;
+ 			}
+		}
+	}
+	label {
+		font-size: 12px;
+		font-weight: bold;
+		font-family: ApexSans-Bold;
+		text-transform: uppercase;
+		color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		input {
+			width: 260px;
+		}
+	}
+}
+.master-layout__header {
+	margin-top: 70px;
+	h1, h5 {
+		text-align: center;
+		color: #fff;
+	}
+	h5 {
+		margin-top: 20px;
+		font-size: 14px;
+	  font-weight: 500;
+	  line-height: 1.36;
+	  text-align: center;
+	  color: #ffffff;
+	}
+}
+
+.master-layout__hero {
+	@include grid-row;
+	padding: 0px 60px!important;
+}
+
+.home__table {
+  border-radius: 18px;
+  background-color: #ffffff;
+	@include grid-col(12);
+	padding: 0px 35px 55px 35px!important;
+	margin-bottom: 85px;
+}
+
+.home__table-title {
+	padding: 30px 0px;
+	margin: 0;
+	font-family: ApexSans-Bold;
+}
+
+.new {
+  border-radius: 4px;
+  background-color: rgba(0, 124, 255, 0.2);
+  color: #007cff;
+  padding: 4px 10px;
+  font-size: 14px;
+	font-family: ApexSans-Bold;
+	margin-bottom: 5px;
+	align-self: flex-start;
+	&.blue {
+		background-color: rgba(255, 193, 7, 0.2);
+		color: #ffc107;
+	}
+	img {
+		padding-right: 8px;
+		position: relative;
+		top: -2px;
+	}
+}
