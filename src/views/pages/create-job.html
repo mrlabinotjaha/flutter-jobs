@@ -7,101 +7,108 @@
 		<h5>Your position</h5>
 
 		<div class="create-job__input">
-			<label><span>Position</span>
+			<label class="create-job__input--label"><span class="create-job__input--span">Position</span>
         <input class="input" type="email" placeholder="Software engineer, mobile application developer...">
       </label>
 
-      <label><span>JOB DESCRIPTION</span>
+      <label class="create-job__input--label"><span class="create-job__input--span">JOB DESCRIPTION</span>
         <textarea name="" id="" cols="30" rows="10" style="height: 134px; width: 422px;"></textarea >
       </label>
 
-      <label><span>Location</span>
+      <label class="create-job__input--label"><span class="create-job__input--span">Location</span>
         <input class="input" type="email" placeholder="Location of the job">
-        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+        <label class="checkbox-container">
+				  <input type="checkbox" checked="checked">
+				  <span class="checkmark"></span>
+				  <p>Remote/anywhere</p>
+				</label>
+      </label>
+
+      <label class="create-job__input--label"><span class="create-job__input--span">Salary</span>
+        <input class="input" type="email" placeholder="Type the salary here">
+      </label>
+
+			<label class="create-job__input--label less-margin"><span class="create-job__input--span">Job type</span></label>
+      <div class="create-job__checkbox">
+				<label class="radio-container">
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmarked">
+					  <p>Full time</p>
+					</span>
+				</label>
+				<label class="radio-container">
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmarked">
+					  <p>Part-time</p>
+				  </span>
+				</label>
+				<label class="radio-container">
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmarked">
+					  <p>Freelance</p>
+				  </span>
+				</label>
+				<label class="radio-container">
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmarked">
+					  <p>Contract</p>
+				  </span>
+				</label>
+			</div>
+
+			<label class="create-job__input--label"><span class="create-job__input--span">Apply url</span>
+        <input class="input" type="email" placeholder="Where people can apply">
+        <label class="checkbox-container">
+				  <input type="checkbox" checked="checked">
+				  <span class="checkmark"></span>
+				  <p class="checkmark-text">Make my job vacancy featured for 7 days ( +99$) <span class="new blue"><img src="{{image 'blue-star.svg'}}" alt="">Featured</span></p>
+				</label>
       </label>
 		</div>
-
 	</div>
+
+	<span class="line"></span>	
+
+	<div class="company-info">
+		<h5>Company info</h5>
+
+		<div class="upload-image">
+			<div class="upload-image__img" style="background-image: url('../../assets/toolkit/images/014-company.svg')"></div>
+		</div>
+
+		<label class="create-job__input--label"><span class="create-job__input--span">Company name</span>
+      <input class="input" type="email" placeholder="Type your company name">
+    </label>
+
+    <label class="create-job__input--label"><span class="create-job__input--span">Company email</span>
+      <input class="input" type="email" placeholder="Your Email here">
+    </label>
+
+    <label class="create-job__input--label"><span class="create-job__input--span">Company website</span>
+      <input class="input" type="email" placeholder="Company website">
+    </label>
+
+    <label class="create-job__input--label"><span class="create-job__input--span">Company card</span>   
+			<form action="/charge" method="post" id="payment-form">
+			  <div class="form-row">
+			    <div id="card-element">
+			      <!-- A Stripe Element will be inserted here. -->
+			    </div>
+
+			    <!-- Used to display form errors. -->
+			    <div id="card-errors" role="alert"></div>
+			  </div>
+			</form>
+    </label>
+
+		<div class="text-center">
+			<button class="button blue">Post this job</button>
+		</div>
+	</div>
+	
 </div>
 
-<!DOCTYPE html>
-<html>
-<style>
-/* The container */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-</style>
-<body>
 
 
-<label class="container">
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
 
-</body>
-</html>
+
