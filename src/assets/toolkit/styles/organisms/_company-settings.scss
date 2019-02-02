@@ -1,0 +1,11 @@
+.company-settings {
+	margin-top: 0;
+	width: 500px;
+	margin-bottom: 80px;
+	@include breakpoint(small down) {
+		width: initial;
+	}
+	h5 {
+		margin-bottom: 50px;
+	}
+}

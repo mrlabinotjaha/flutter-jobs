@@ -3,6 +3,18 @@
 	height: 100vh;
 	position: fixed;
   background-image: linear-gradient(16deg, #0072ff, #00c6ff);
+  @include breakpoint(small down) {
+  	width: 55px;
+  	.sidebar__title {
+  		display: none;
+  	}
+  	a {
+  		min-height: 78px;
+  		img {
+  			margin-right: 30px!important;
+  		}
+  	}
+  }
 }
 
 .sidebar__title {
@@ -25,6 +37,11 @@
 		padding: 15px 15px;
 		font-weight: 500;
 		color: #ffffff;
+		span {
+			@include breakpoint(small down) {
+				display: none;
+			}
+		}
 		img {
 			margin-right: 15px;
 		}
@@ -48,10 +65,12 @@
   background-color: #ffffff;
   padding: 0px 70px;
 	left: 261px;
-}
+	@include breakpoint(small down) {
 
-.dashboard-header__settings {
-	
+    padding: 0px 25px;
+    left: 55px;
+    width: calc(100% - 55px);
+	}
 }
 
 .dashboard-header__login {
@@ -70,7 +89,7 @@
 }
 
 .dashboard-header__profile {
-	width: 32px;
+	min-width: 32px;
 	height: 32px;
 	border-radius: 16px;
 	border: 1px solid gray;
