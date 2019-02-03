@@ -1,0 +1,112 @@
+.creditcard {
+	width: 320px;
+  height: 177px;
+  border-radius: 8px;
+  background-color: #007cff;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0px 60px;
+  @include breakpoint(small down) {
+  	width: 230px;
+    height: 160px;
+    p {
+    	font-size: 14px;
+    }
+    .creditcard__number {
+    	 font-size: 20px;
+    }
+  }
+  p {
+  	font-family: Roboto;
+	  font-size: 16px;
+	  font-weight: 500;
+	  color: #ffffff;
+	  margin: 0;
+  }
+}
+.flex-column {
+	flex-direction: column;
+}
+.creditcard__number {
+	font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+.creditcard__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.payments-table {
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+	thead {
+		border: none;
+		background-color: #fff;
+		tr {
+			height: 18px;
+		}
+		td {
+			padding-bottom: 0px;
+			font-family: Roboto;
+		  font-size: 12px;
+		  font-weight: 500;
+		  text-transform: uppercase;
+		  letter-spacing: 0.1px;
+		  color: #707487;
+		}
+	}
+	tbody {
+		tr {
+			background: #fff;
+			td {
+				font-size: 13px;
+				font-family: 'Roboto';
+				background: #fff;
+				border: 1px solid #d3dbe1;
+			  border-right: none;
+			  border-left: none;
+			  &.td-bold {
+			  	font-weight: 600;
+			  }
+			  &.td-green {
+			  	color: #7bc757;
+			  }
+			  &.td-blue {
+			  	a {
+			  		color: #007cff;
+			  		font-size: 14px;	
+			  		img {
+			  			margin-right: 7px;
+			  		}
+			  	}
+			  }
+			  &:first-child {
+			  	border-left: 1px solid #d3dbe1;
+					border-top-left-radius: 6px;
+					border-bottom-left-radius: 6px;
+			  }
+			  &:last-child {
+			  	border-right: 1px solid #d3dbe1;
+					border-top-right-radius: 6px;
+					border-bottom-right-radius: 6px;
+			  }
+			}
+		}
+	}
+}
+
+.scroll-x {
+	overflow-x: auto;
+}
+
+.table-content {
+	overflow-x: scroll;
+	min-width: 700px;
+}

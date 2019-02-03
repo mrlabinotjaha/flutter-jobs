@@ -71,6 +71,11 @@
 	margin: 30px 0px;
 	background-color: #d3d9e5;
 	position: relative;
+	@include breakpoint(small down) {
+		&:before, &:after {
+			display: none;
+		}
+	}
 	&:before {
 		content: '';
 		position: absolute;
