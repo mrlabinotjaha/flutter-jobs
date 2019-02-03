@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+<body>
+
+
+
+	
+<div class="reveal open-modal" id="modal1" data-reveal>
+  <div class="modal__header">
+  	<img src="/assets/toolkit/images/small-company.svg" alt="">
+  	<h4>Do you want to create an account ?</h4>
+  	<p class="gray">You have already filled the informations of your company, so we can create you an account. But why do you need an account?</p>
+  </div>
+  <div class="modal__hero">
+  	<div class="modal__hero-info">
+  		<img src="/assets/toolkit/images/modal1.svg" alt="">
+  		<p class="gray">See how much time is left for your job vacancy.</p>
+  	</div>
+  	<div class="modal__hero-info">
+  		<img src="/assets/toolkit/images/modal1.svg" alt="">
+  		<p class="gray">Renew if the job listing is over so you don’t have to refill the informations again.</p>
+  	</div>
+  	<div class="modal__hero-info">
+  		<img src="/assets/toolkit/images/modal1.svg" alt="">
+  		<p class="gray">Renew if the job listing is over so you don’t have to refill the informations again.</p>
+  	</div>
+
+  </div>
+  <div class="modal__footer">
+  	<div class="modal__footer-buttons">
+  		<a href="#" class="button gray" data-close aria-label="Close modal">No I don’t want</a>
+  		<a href="#" class="button blue">Yes, I want to create account</a>
+  	</div>
+  	<p class="gray">*By not creating account you will not be able to edit the job listing.</p>
+  </div>
+
+</div>
+<div class="reveal open-modal reset" id="modal2" data-reveal>
+  <div class="modal__header">
+  	<img src="/assets/toolkit/images/small-company.svg" alt="">
+  	<h4>We are happy to have you inside?</h4>
+  	<p class="gray">We just need a password for you.</p>
+  </div>
+  <div class="modal__hero">
+  	<label class="create-job__input--label"><span class="create-job__input--span">Your email</span>
+      <p>info@company.com</p>
+    </label>
+  	<label class="create-job__input--label"><span class="create-job__input--span">Password</span>
+      <input class="input" type="password" placeholder="Your password here">
+    </label>
+  	<a href="#" class="button blue">Let me in</a>
+  </div>
+</div>
+<p><button class="button" data-open="modal1">Do you want to create an account</button></p>
+
+<p><button class="button" data-open="modal2">type a password</button></p>
+
+	<script src="https://js.stripe.com/v3/"></script>
+	
+	<script src="../assets/toolkit/scripts/jquery.min.js"></script>
+
+
+	<!-- toolkit scripts -->
+	<script src="../assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>

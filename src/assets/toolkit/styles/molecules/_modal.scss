@@ -1,0 +1,89 @@
+.open-modal {
+	width: 700px;
+  height: 658px;
+  background-color: #ffffff;
+  outline: none;
+  padding: 50px 125px;
+  @include breakpoint(small down) {
+  	width: 100%;
+  	padding: 50px 30px;
+  }
+  &.reset {
+  	.modal__header {
+  		padding-top: 100px;
+  	}
+  	.modal__hero {
+  		flex-direction: column;
+  		.create-job__input--label {
+  			margin-bottom: 20px;
+  			p {
+					font-size: 14px;
+					color: #5b5d6e;
+  			}
+  		}
+  		.button {
+  			width: 250px;
+  			margin: 0 auto;
+  		}
+  	}
+  }
+}
+
+.modal__header {
+	text-align: center;
+	h4 {
+		margin: 0;
+		padding: 13px 0px 5px;
+		font-size: 24px;
+	}
+}
+
+.modal__hero {
+	margin-top: 45px;
+	display: flex;	
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .create-job__input--label {
+  	width: 100%;
+  }
+  label {
+  	width: 100%;
+  }
+}
+
+.modal__hero-info {
+	max-width: 187px;
+	img {
+		margin-bottom: 10px;
+	}
+}
+
+.modal__footer {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	p {
+		max-width: 160px;
+		margin: 0;
+		font-size: 12px;
+		@include breakpoint(small down) {
+			max-width: initial;
+		}
+	}
+}
+
+.modal__footer-buttons {
+	display: flex;
+	justify-content: space-between;
+	@include breakpoint(small down) {
+		flex-direction: column-reverse;
+		a {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+
+

@@ -80,6 +80,12 @@
 							<a href="molecules.html#checkbox">Checkbox</a>
 						</li>
 						<li>
+							<a href="molecules.html#modal-create">Modal Create</a>
+						</li>
+						<li>
+							<a href="molecules.html#modal-reset">Modal Reset</a>
+						</li>
+						<li>
 							<a href="molecules.html#ordered">Ordered</a>
 						</li>
 						<li>
@@ -145,6 +151,9 @@
 							<a href="pages/login.html">Login</a>
 						</li>
 						<li>
+							<a href="pages/modals.html">Modals</a>
+						</li>
+						<li>
 							<a href="pages/payments.html">Payments</a>
 						</li>
 					</ul>
@@ -200,6 +209,142 @@
 	<pre><code class="language-markup">&lt;label&gt;
 	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
 &lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="modal-create">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Modal Create</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="reveal open-modal" id="modal1" data-reveal>
+	<div class="modal__header">
+		<img src="/assets/toolkit/images/small-company.svg" alt="">
+		<h4>Do you want to create an account ?</h4>
+		<p class="gray">You have already filled the informations of your company, so we can create you an account. But why do you need an account?</p>
+	</div>
+	<div class="modal__hero">
+		<div class="modal__hero-info">
+			<img src="/assets/toolkit/images/modal1.svg" alt="">
+			<p class="gray">See how much time is left for your job vacancy.</p>
+		</div>
+		<div class="modal__hero-info">
+			<img src="/assets/toolkit/images/modal1.svg" alt="">
+			<p class="gray">Renew if the job listing is over so you don’t have to refill the informations again.</p>
+		</div>
+		<div class="modal__hero-info">
+			<img src="/assets/toolkit/images/modal1.svg" alt="">
+			<p class="gray">Renew if the job listing is over so you don’t have to refill the informations again.</p>
+		</div>
+
+	</div>
+	<div class="modal__footer">
+		<div class="modal__footer-buttons">
+			<a href="#" class="button gray" data-close aria-label="Close modal">No I don’t want</a>
+			<a href="#" class="button blue">Yes, I want to create account</a>
+		</div>
+		<p class="gray">*By not creating account you will not be able to edit the job listing.</p>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;reveal open-modal&quot; id&#x3D;&quot;modal1&quot; data-reveal&gt;
+	&lt;div class&#x3D;&quot;modal__header&quot;&gt;
+		&lt;img src&#x3D;&quot;/assets/toolkit/images/small-company.svg&quot; alt&#x3D;&quot;&quot;&gt;
+		&lt;h4&gt;Do you want to create an account ?&lt;/h4&gt;
+		&lt;p class&#x3D;&quot;gray&quot;&gt;You have already filled the informations of your company, so we can create you an account. But why do you need an account?&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;modal__hero&quot;&gt;
+		&lt;div class&#x3D;&quot;modal__hero-info&quot;&gt;
+			&lt;img src&#x3D;&quot;/assets/toolkit/images/modal1.svg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;p class&#x3D;&quot;gray&quot;&gt;See how much time is left for your job vacancy.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;modal__hero-info&quot;&gt;
+			&lt;img src&#x3D;&quot;/assets/toolkit/images/modal1.svg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;p class&#x3D;&quot;gray&quot;&gt;Renew if the job listing is over so you don’t have to refill the informations again.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;modal__hero-info&quot;&gt;
+			&lt;img src&#x3D;&quot;/assets/toolkit/images/modal1.svg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;p class&#x3D;&quot;gray&quot;&gt;Renew if the job listing is over so you don’t have to refill the informations again.&lt;/p&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;modal__footer&quot;&gt;
+		&lt;div class&#x3D;&quot;modal__footer-buttons&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button gray&quot; data-close aria-label&#x3D;&quot;Close modal&quot;&gt;No I don’t want&lt;/a&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button blue&quot;&gt;Yes, I want to create account&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;p class&#x3D;&quot;gray&quot;&gt;*By not creating account you will not be able to edit the job listing.&lt;/p&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="modal-reset">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Modal Reset</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="reveal open-modal reset" id="modal2" data-reveal>
+	<div class="modal__header">
+		<img src="/assets/toolkit/images/small-company.svg" alt="">
+		<h4>We are happy to have you inside?</h4>
+		<p class="gray">We just need a password for you.</p>
+	</div>
+	<div class="modal__hero">
+		<label class="create-job__input--label"><span class="create-job__input--span">Your email</span>
+      <p>info@company.com</p>
+    </label>
+		<label class="create-job__input--label"><span class="create-job__input--span">Password</span>
+      <input class="input" type="password" placeholder="Your password here">
+    </label>
+		<a href="#" class="button blue">Let me in</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;reveal open-modal reset&quot; id&#x3D;&quot;modal2&quot; data-reveal&gt;
+	&lt;div class&#x3D;&quot;modal__header&quot;&gt;
+		&lt;img src&#x3D;&quot;/assets/toolkit/images/small-company.svg&quot; alt&#x3D;&quot;&quot;&gt;
+		&lt;h4&gt;We are happy to have you inside?&lt;/h4&gt;
+		&lt;p class&#x3D;&quot;gray&quot;&gt;We just need a password for you.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;modal__hero&quot;&gt;
+		&lt;label class&#x3D;&quot;create-job__input--label&quot;&gt;&lt;span class&#x3D;&quot;create-job__input--span&quot;&gt;Your email&lt;/span&gt;
+      &lt;p&gt;info@company.com&lt;/p&gt;
+    &lt;/label&gt;
+		&lt;label class&#x3D;&quot;create-job__input--label&quot;&gt;&lt;span class&#x3D;&quot;create-job__input--span&quot;&gt;Password&lt;/span&gt;
+      &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Your password here&quot;&gt;
+    &lt;/label&gt;
+		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button blue&quot;&gt;Let me in&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
