@@ -33,6 +33,9 @@ $(function() {
    });
 });
 
+$(".dashboard-header__login").click(function(){
+    $('.dashboard-header__dropdown').toggleClass('opened');
+});
 
 $(function(){
 	// $('input, textarea').placeholder();
@@ -46,8 +49,6 @@ $(".menu").click(function(){
   $('.menu').toggleClass("open");
   $('.header__nav-mobie').toggleClass("open");
 });
-
-
 
 	// Create a Stripe client.
 var stripe = Stripe('pk_test_5xEaWrlDOsegN7c3S2LzPy4N');

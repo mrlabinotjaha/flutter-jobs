@@ -79,6 +79,10 @@
 	  });
 	});
 
+	$(".dashboard-header__login").click(function () {
+	  $('.dashboard-header__dropdown').toggleClass('opened');
+	});
+
 	$(function () {
 	  // $('input, textarea').placeholder();
 	  $(document).foundation();

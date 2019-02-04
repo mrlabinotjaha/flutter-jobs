@@ -97,8 +97,22 @@
 .job-listing-table__more {
 	min-width: 145px;
 	text-align: right;
+	@include breakpoint(small down) {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		a {
+			margin: 10px 0px!important;
+		}
+	}
 	a:last-child {
 		margin-left: 15px;
+	}
+}
+
+.dashboard-jl {
+	@include breakpoint(small down) {
+		flex-direction: column;
 	}
 }
 

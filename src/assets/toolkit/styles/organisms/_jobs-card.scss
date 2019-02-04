@@ -4,6 +4,11 @@
   border-radius: 6px;
   background-color: #007cff;
   padding: 40px 65px;
+  @include breakpoint(small down) {
+  	width: 100%;
+  	margin-top: 25px;
+  	padding: 40px 15px;
+  }
 }
 
 .jobs-card__post {
@@ -13,6 +18,9 @@
 .jobs-card__number {
 	display: flex;
 	align-items: center;
+	@include breakpoint(small down) {
+		justify-content: center;
+	}
 	.jobs-card__icon {
 		background: rgba(255, 255, 255, 0.2);
 		border-radius: 50%;
