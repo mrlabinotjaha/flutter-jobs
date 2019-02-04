@@ -1,5 +1,7 @@
 .master-layout {
 	background-image: linear-gradient(57deg, #0072ff, #00c6ff);
+	overflow: hidden;
+	padding-top: 55px;
 	.header {
 		background: transparent;
 	}
@@ -51,6 +53,18 @@
 	margin: 0 auto;
 	padding: 70px 0px;
 	display: flex;
+	@include breakpoint(small down) {
+		width: 100%;
+		margin: 0 auto;
+    padding: 35px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label {
+    	margin-bottom: 20px;
+    }
+	}
 	input {
  		background: rgba(0, 0, 0, 0.3);
  		border: none;
@@ -91,6 +105,10 @@
 	}
 }
 .master-layout__header {
+	@include breakpoint(small down) {
+		padding: 0px 15px;
+		margin-top: 30px;
+	}
 	margin-top: 70px;
 	h1, h5 {
 		text-align: center;
@@ -103,12 +121,18 @@
 	  line-height: 1.36;
 	  text-align: center;
 	  color: #ffffff;
+	  @include breakpoint(small down) {
+	  	br { display: none;}
+	  }
 	}
 }
 
 .master-layout__hero {
 	@include grid-row;
 	padding: 0px 60px!important;
+	@include breakpoint(small down) {
+		padding: 0px 15px!important;
+	}
 }
 
 .home__table {
@@ -123,6 +147,9 @@
 	padding: 30px 0px;
 	margin: 0;
 	font-family: ApexSans-Bold;
+	@include breakpoint(small down) {
+		text-align: center;
+	}
 }
 
 .new {

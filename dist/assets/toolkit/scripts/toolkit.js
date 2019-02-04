@@ -70,12 +70,27 @@
 	// require('./components/owl-carousel.js');
 
 	$(function () {
+	  $(window).scroll(function () {
+	    if ($(this).scrollTop() > 20) {
+	      $('.header').addClass('header__content-change');
+	    } else if ($(this).scrollTop() < 20) {
+	      $('.header').removeClass('header__content-change');
+	    }
+	  });
+	});
+
+	$(function () {
 	  // $('input, textarea').placeholder();
 	  $(document).foundation();
 	  $(".chosen-select").chosen();
 	  setTimeout(function () {
 	    $(".fouc").css('opacity', 1);
 	  }, 200);
+
+	  $(".menu").click(function () {
+	    $('.menu').toggleClass("open");
+	    $('.header__nav-mobie').toggleClass("open");
+	  });
 
 	  // Create a Stripe client.
 	  var stripe = Stripe('pk_test_5xEaWrlDOsegN7c3S2LzPy4N');

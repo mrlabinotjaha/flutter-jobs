@@ -1,5 +1,13 @@
 .header {
 	background-image: linear-gradient(87deg, #0072ff, #00c6ff);	
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: 0.3s ease all;
+	z-index: 200;
+	&.header__content-change {
+		background-color: rgba(0, 0, 0, 0.52)!important;
+	}
 }
 
 .header__container {
@@ -8,10 +16,12 @@
 
 .header__content {
 	@include grid-col(12);
+	position: relative;
 	display: flex;
 	align-items: center;
 	height: 80px;
 	justify-content: space-between;
+	
 }
 
 .header__logo {
@@ -30,6 +40,9 @@
 .header__nav {
 	display: flex;
 	align-items: center;
+	@include breakpoint(small down) {
+		display: none;
+	}
 }
 
 .header__nav-login {
@@ -38,4 +51,33 @@
   text-align: center;
   color: #ffffff;
   margin-right: 40px;
+  &:hover, &:focus {
+  	color: #ffffff;
+  	outline: none;
+  }
 }
+
+// Mobile nav
+
+.header__nav-mobie {
+		transition: 0.3s ease all;
+    right: -1180px;
+		position: absolute;
+		top: 65px;
+		padding: 25px;
+		background: rgba(0, 0, 0, 0.7);
+		border-radius: 6px;
+		flex-direction: column;
+		display: flex;
+		&.open {
+			right: 0;
+		}
+	.header__nav-login {
+		margin-right: 40px;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+}
+
+
+
