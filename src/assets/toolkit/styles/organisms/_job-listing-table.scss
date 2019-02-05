@@ -97,6 +97,9 @@
 .job-listing-table__more {
 	min-width: 145px;
 	text-align: right;
+	a img {
+		margin-right: 8px;
+	}
 	@include breakpoint(small down) {
 		text-align: center;
 		display: flex;

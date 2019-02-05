@@ -16,3 +16,9 @@ p.gray {
   // text-align: center;
   color: #5b5d6e;
 }
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
